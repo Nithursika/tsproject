@@ -1,0 +1,7 @@
+name: tsproject
+runtime: nodejs
+description: created by template
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: gcp-typescript

@@ -1,0 +1,30 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: tsproject
+  description:  project 
+  links:
+  - title: Pulumi Console
+    url: https://app.pulumi.com/nithursika/tsproject
+spec:
+  type: project
+  lifecycle: experimental
+  owner: guests
+  system: example
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: tsproject
+  description: "created by template"
+  annotations:
+
+    pulumi.com/project-slug: nithursika/tsproject
+spec:
+  type: service
+  lifecycle: experimental
+  owner: guests
+  dependsOn:
+  - resource:default/tsproject
+  system: example
